@@ -1,0 +1,18 @@
+﻿@model Actividad2Unidad2.Models.ConvertidorViewModels
+@{
+}
+<html>
+ <body>
+    <form>
+        <p>Ingrese el dinero:</p>
+        <input type="text" value="@Model.Dinero" name="Dinero"/>
+        <p>Seleccionar tipo de moneda</p>
+        <input type="submit" name="moneda" value="Peso"/>
+        <input type="submit" name="moneda" value="Dolar"/>
+        <br/>
+        <p>
+            @Model.Resultado.ToString("$00")
+        </p>
+    </form>
+ </body>
+</html>
